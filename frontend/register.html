@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Teacher Registration</title><link rel="stylesheet" href="css/style.css"></head>
+<body><header class="top"><div class="brand">DAV <span>Teacher Training Portal</span></div><nav><a href="index.html">Home</a><a href="login.html">Login</a></nav></header>
+<main class="panel"><a href="index.html">← Home</a><h1>Teacher Registration</h1><p class="muted">Complete the form. Your account will remain Pending until approved.</p>
+<form id="registerForm" class="form-grid">
+<label>Teacher Name<input name="full_name" required pattern="[A-Za-z ]+" placeholder="Your full name"></label>
+<label>Email (Gmail)<input name="email" type="email" required placeholder="name@gmail.com"></label>
+<label>Mobile Number<input name="mobile" inputmode="numeric" pattern="[1-9][0-9]{9}" maxlength="10" required placeholder="10-digit mobile"></label>
+<label>WhatsApp Number<input name="whatsapp" inputmode="numeric" pattern="[1-9][0-9]{9}" maxlength="10" placeholder="Optional"></label>
+<label class="wide">School Name<input name="school" required placeholder="Enter school name"></label>
+<label>Subjects (comma separated)<input name="subjects" required placeholder="Computer Science, Mathematics"></label>
+<label>Levels / Classes (comma separated)<input name="levels" required placeholder="Primary, Secondary"></label>
+<label class="wide">Password<input name="password" type="password" minlength="8" required placeholder="At least 8 characters"></label>
+<div class="wide"><button class="btn" type="submit">Submit Registration</button><p id="message" role="status"></p></div>
+</form></main><script src="js/config.js"></script><script src="js/app.js"></script></body></html>
